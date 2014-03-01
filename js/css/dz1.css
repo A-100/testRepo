@@ -1,0 +1,57 @@
+/* 
+    Document   : general styles for screen media
+    Created on : 01/02/2013
+    Author     : 
+    Description: 
+*/
+@import url("general.css");
+
+fieldset {
+    width: 46%;
+    overflow: hidden;
+    padding: 20px 10px;
+    border: 1px solid #402720;
+}
+fieldset > div.select {
+    margin-bottom: 20px;
+}
+fieldset > div.select span {
+    display: inline-block;
+    text-align: right;
+    margin-right: 2%;
+    width: 39%;
+}
+fieldset > div.select select {
+    width: 58%;
+}
+fieldset > div.left {
+    width: 40%;
+}
+fieldset > div.right {
+    width: 55%;
+}
+fieldset div.input div {
+    margin-bottom: 8px;
+}
+form#dz1 legend {
+    text-align: center;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+form#dz1 label {
+    display: inline-block;
+    text-align: right;
+    margin-right: 5%;
+    width: 10%;
+}
+form#dz1 input {
+    width: 80%;
+    display: inline-block;
+}
+
+div#output {
+    border: 1px solid gray;
+    text-align: center;
+    padding: 20px 1%;
+}
+

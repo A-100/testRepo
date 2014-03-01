@@ -1,4 +1,6 @@
-testRepo1
+testRepo
 =========
 
 Test repository
+
+New text
