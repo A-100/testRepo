@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>JavaScript - Home</title>
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/ie.js"></script>
+        <![endif]-->
+        <!--[if gte IE 7]><!-->
+        <link type="text/css" rel="stylesheet" media="screen, projection" href="css/dz3.css" />
+        <link rel="stylesheet" media="screen, projection" href="css/jqueryui/jquery-ui-1.10.4.custom.min.css" />
+        <!--<! [endif]-->
+        <script src="js/libs/jquery-1.10.2.js"></script>
+        <script src="js/libs/jquery-ui-1.10.4.custom.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/dz3.js"></script>
+    </head>
+    <body>
+        <header class="group">
+            <hgroup class="left">
+                <h1>JavaScript</h1>
+                <h2>Домашние задания</h2>
+            </hgroup>
+            <form class="right">
+                <input type="text" />
+                <input type="submit" value="Submit" />
+            </form>
+        </header>
+
+        <nav>
+            <ul class="group">
+                <li><a href="dz1.html">DZ-1</a></li>
+                <li><a href="dz2.html">DZ-2</a></li>
+                <li><a class="active" href="dz3.html">DZ-3</a></li>
+                <li><a href="#">DZ-4</a></li>
+                <li><a href="#">DZ-5</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="content">
+                
+                <div id="accordion">
+                    <h3>"Адаптер" (калькулятор)</h3>
+                    <div id="calc">
+                        <form id="strategy">
+                            <label>X: <input id="x" type="text" value="0" /></label>
+                            <label>OP:
+                                <select id="op">
+                                    <option value="addition">+</option>
+                                    <option value="subtraction">-</option>
+                                    <option value="division">/</option>
+                                    <option value="power">^</option>
+                                    <option value="multiplication">*</option>
+                                </select>
+                            </label>
+                            <label>Y: <input id="y" type="text" value="0" /></label>
+                            <label><span>=</span> <input id="res" type="text" value="0" disabled /></label>
+                        </form>
+                        <div id="error"></div>
+                    </div>
+                    <h3>"Декоратор" (рассчет расстояния)</h3>
+                    <div id="travel">
+                        <div class="row group">
+                            <table class="cost left">
+                                <caption>Цена экскурсии</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Вид прогулки</th>
+                                        <th>Цена за 1км</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Пешком</td>
+                                        <td>$1,0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>На катере</td>
+                                        <td>$1,5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>На лошадях</td>
+                                        <td>$2,5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>На воздушном шаре</td>
+                                        <td>$5,0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <form id="travelForm" class="right">
+                                <p>Полная стоимость экскурсии, $: <span id="travelResult"></span></p>
+                                <label class="group">От A до B (<span id="abPath">100</span> км):
+                                    <select id="ab" class="right">
+                                        <option selected value="OnFoot">Пешком</option>
+                                        <option value="OnBoat">На катере</option>
+                                        <option value="OnHorseback">На лошадях</option>
+                                        <option value="OnBalloon">На воздушном шаре</option>
+                                    </select>
+                                </label>
+                                <label class="group">От B до C (<span id="bcPath">120</span> км):
+                                    <select id="bc" class="right">
+                                        <option selected value="OnFoot">Пешком</option>
+                                        <option value="OnBoat">На катере</option>
+                                        <option value="OnHorseback">На лошадях</option>
+                                        <option value="OnBalloon">На воздушном шаре</option>
+                                    </select>
+                                </label>
+                                <label class="group">От C до D (<span id="cdPath">80</span> км):
+                                    <select id="cd" class="right">
+                                        <option selected value="OnFoot">Пешком</option>
+                                        <option value="OnBoat">На катере</option>
+                                        <option value="OnHorseback">На лошадях</option>
+                                        <option value="OnBalloon">На воздушном шаре</option>
+                                    </select>
+                                </label>
+                                <label class="group">От D до E (<span id="dePath">70</span> км):
+                                    <select id="de" class="right">
+                                        <option selected value="OnFoot">Пешком</option>
+                                        <option value="OnBoat">На катере</option>
+                                        <option value="OnHorseback">На лошадях</option>
+                                        <option value="OnBalloon">На воздушном шаре</option>
+                                    </select>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="map">
+                            <span id="A" class="travel"><a>A</a></span>
+                            <span id="B" class="travel"><a>B</a></span>
+                            <span id="C" class="travel"><a>C</a></span>
+                            <span id="D" class="travel"><a>D</a></span>
+                            <span id="E" class="travel"><a>E</a></span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <p>Александр Сотников &copy; 2014</p>
+            </div>
+        </footer>
+    </body>
+</html>
