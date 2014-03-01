@@ -1,0 +1,65 @@
+/* 
+    Document   : general styles for screen media
+    Created on : 08/02/2013
+    Author     : 
+    Description: 
+*/
+@import url("general.css");
+
+div#calc {
+    height: 150px;
+}
+div#calc form {
+    margin: 20px 0;
+}
+div#calc form label, div#calc form span {
+    display: inline-block;
+    margin-right: 15px;
+}
+div#calc form input {
+    width: 70px;
+}
+div#calc form input#res {
+    background-color: #fff;
+}
+div#calc form span {
+    font-size: 1.8em;
+}
+/************ DZ-2-2****************************/
+div.ui-dialog {
+    font-size: 1.2em;
+}
+div.ui-dialog-titlebar {
+    font-size: 1.3em;
+}
+div.ui-dialog .ui-state-error { 
+    padding: 5px;
+}
+div#dialog-form .validateTips { 
+    padding: 5px;
+    color: red;
+}
+div#dialog-form label, div#dialog-form label input { 
+    display: block; 
+}
+div#dialog-form input.text { 
+    margin-bottom: 10px; 
+    width: 95%; 
+    padding: 5px; 
+}
+div#dialog-form fieldset { 
+    padding: 0; 
+    border: 0; 
+    margin-top: 15px; 
+}
+
+div#users {
+    margin: 20px 0;
+}
+div#users p {
+    padding: 2px 0;
+}
+div#users p.title {
+    font-size: 1.3em;
+}
+

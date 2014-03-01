@@ -1,0 +1,183 @@
+/* 
+    Document   : general styles for screen media
+    Created on : 01/02/2013
+    Author     : 
+    Description: 
+*/
+@import url("reset.css");
+
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 62.5%;
+    color: #593b28; 
+    background-color: #f3f0e2;
+}
+
+body {
+    
+}
+
+/* misc */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+hr, .hide {
+    display: none;
+}
+a img {
+    border: none;
+}
+img, object {
+    width: 100%;
+}
+
+/* self-clear floats */
+.group:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* links */
+a:link, a:visited {
+    color: #369;
+    outline: none;
+}
+a:hover {
+    color: #39c;
+}
+
+/* page structure */
+
+body > header, body > nav, body > main, body > footer {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/******************************************************************/
+
+/* header */
+
+body > header {
+    padding: 20px 0;
+}
+body > header hgroup {
+    width: 600px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body > header h1 {
+    font-size: 4em;
+}
+body > header h2 {
+    font-size: 2em;
+    font-style: italic;
+}
+body > header form {
+    margin-top: 20px;
+}
+
+/* navigation */
+
+body > nav {
+    background-color: #402720;
+}
+body > nav ul {
+    text-transform: uppercase;
+    font-size: 1.6em;
+    overflow: hidden;
+}
+body > nav ul li {
+    display: inline-block;
+}
+body > nav ul a {
+    text-decoration: none;
+    padding: 10px 50px;
+    display: block;
+}
+body > nav li a:link, body > nav li a:visited{
+    color:#f7f0d6;
+}
+body > nav li a.active{
+    cursor: default;
+}
+body > nav li a:hover, body > nav li a.active{
+    color:#a6924d;
+}
+
+/* content */
+#content {
+    font-size: 1.5em;
+    padding: 20px 0;
+    min-height: 600px;
+}
+#content h2 {
+    margin: 15px 0; 
+    font-size: 1.5em;
+}
+
+/* footer */
+
+body > footer {
+    background-color: #402720;
+    color: #f7f0d6;
+}
+body > footer > div {
+    padding: 10px;
+}
+body > footer p {
+    margin: 10px;
+}
+
+div#error {
+    width: 100%;
+    color: red;
+    border: 1px dotted red;
+    padding: 20px 5px;
+    margin-top: 20px;
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 6px 15px 8px;
+    border: 1px solid #502920;
+    color: #402720;
+    background-color: #e4dfca;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+button:hover {
+    color: #402720;
+    background-color: #f2efe6;
+}
+
+/*************** DZ-3/2 ************************/
+
+div#calc {
+    min-height: 150px;
+}
+div#calc form {
+    margin: 20px 0;
+}
+div#calc form label, div#calc form span {
+    display: inline-block;
+    margin-right: 15px;
+}
+div#calc form input {
+    width: 70px;
+}
+div#calc form input#res {
+    width: 200px;
+    background-color: #fff;
+}
+div#calc form span {
+    font-size: 1.8em;
+}
+

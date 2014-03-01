@@ -1,0 +1,91 @@
+/* 
+    Document   : general styles for screen media
+    Created on : 12/02/2013
+    Author     : 
+    Description: 
+*/
+@import url("general.css");
+
+div.row {
+    padding: 0 0 10px;
+}
+div#travel table.cost {
+    width: 52%;
+}
+div#travel table.cost caption {
+    font-size: 1.3em;
+    padding: 3px 5px 0;
+}
+div#travel table.cost th {
+    padding: 5px 5px 1px;
+    font-weight: bold;
+}
+div#travel table.cost td {
+    border: 1px solid #a6924d;
+    padding: 2px 6px;
+}
+div#travel table.cost tr:hover{
+    background-color: #402720;
+    color: #f7f0d6;
+}
+
+form#travelForm {
+    width: 45%;
+    padding: 10px 0 0;
+    text-align: center;
+}
+form#travelForm label {
+    display: block;
+}
+form#travelForm label select {
+    display: inline-block;
+    margin-left: 5px;
+    width: 250px;
+}
+
+form#travelForm p {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #a6924d;
+}
+span#travelResult {
+    color: #dd4422;
+}
+
+div#travel > div.map {
+    height: 450px;
+    position: relative;
+    background: url(../images/crimea.jpg) no-repeat;
+}
+div#travel div.map span.travel {
+    position: absolute;
+    display: block;
+}
+div#travel div.map span.travel a {
+    padding: 2px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #f7f0d6;
+    background-color: #402720;
+    border: 1px solid #402720;
+}
+span#A {
+    left: 110px;
+    top: 20px;
+}
+span#B {
+    left: 20px;
+    top: 210px;
+}
+span#C {
+    left: 300px;
+    top: 430px;
+}
+span#D {
+    left: 620px;
+    top: 310px;
+}
+span#E {
+    left: 800px;
+    top: 130px;
+}
